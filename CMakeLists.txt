@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.0)
+project(glTest)
+add_executable(glTest main.cpp deps/glad.c)
+target_include_directories(glTest PUBLIC deps)
+target_link_libraries(glTest LINK_PUBLIC opengl32)
